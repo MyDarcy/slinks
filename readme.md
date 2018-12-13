@@ -80,10 +80,10 @@ curl --request POST \
 
 得到返回结果：
 ```
-{"code":1,"data":{"llink":"http://xawei.me/2017/07/30/%E5%8D%95%E5%AE%9E%E4%BE%8BRedis%E6%9E%84%E5%BB%BA%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%B8%AD%E7%9A%84ABA%E9%97%AE%E9%A2%98/","slink":"http://s.xawei.me/s/1x"},"msg":"gen slink success"}
+{"code":1,"data":{"llink":"http://xawei.me/2017/07/30/%E5%8D%95%E5%AE%9E%E4%BE%8BRedis%E6%9E%84%E5%BB%BA%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%B8%AD%E7%9A%84ABA%E9%97%AE%E9%A2%98/","slink":"http://s.xawei.me/s/1"},"msg":"gen slink success"}
 ```
 则我们可以直接在浏览器访问
-http://s.xawei.me/s/1x
+http://s.xawei.me/s/1
 即可跳转至长链接
 http://xawei.me/2017/07/30/%E5%8D%95%E5%AE%9E%E4%BE%8BRedis%E6%9E%84%E5%BB%BA%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E4%B8%AD%E7%9A%84ABA%E9%97%AE%E9%A2%98/
 
