@@ -1,0 +1,24 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> slinks/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] GET    /s/:slink                 --> slinks/routers/api/v1.Redirect (3 handlers)
+[GIN-debug] GET    /v1/hi                    --> slinks/routers/api/v1.Hi (3 handlers)
+[GIN-debug] GET    /v1/hiredis               --> slinks/routers/api/v1.HiRedis (3 handlers)
+[GIN-debug] POST   /v1/getlink               --> slinks/routers/api/v1.GetLink (3 handlers)
+[GIN-debug] POST   /v1/genslink              --> slinks/routers/api/v1.GenSlink (3 handlers)
+[GIN-debug] Listening and serving HTTP on :9090
+[GIN] 2018/12/13 - 11:18:44 | 200 |     656.198µs |       127.0.0.1 | POST     /v1/genslink
+[GIN] 2018/12/13 - 11:18:47 | 200 |     581.872µs |       127.0.0.1 | POST     /v1/genslink
+[GIN] 2018/12/13 - 11:18:51 | 200 |    3.261178ms |       127.0.0.1 | POST     /v1/getlink
+[GIN] 2018/12/13 - 11:18:56 | 200 |      514.37µs |       127.0.0.1 | POST     /v1/getlink
+[GIN] 2018/12/13 - 11:19:25 | 301 |     477.406µs |       127.0.0.1 | GET      /s/2
+[GIN] 2018/12/13 - 11:20:05 | 200 |   19.264972ms |       127.0.0.1 | POST     /v1/genslink
+[GIN] 2018/12/13 - 11:20:20 | 301 |    2.162667ms |       127.0.0.1 | GET      /s/2
+[GIN] 2018/12/13 - 11:20:27 | 404 |       1.957µs |       127.0.0.1 | GET      /favicon.ico
+[GIN] 2018/12/13 - 11:21:20 | 301 |     529.271µs |       127.0.0.1 | GET      /s/2
+[GIN] 2018/12/13 - 13:07:39 | 200 |    1.842475ms |       127.0.0.1 | GET      /s/1x
+[GIN] 2018/12/13 - 13:07:39 | 404 |        2.09µs |       127.0.0.1 | GET      /favicon.ico
